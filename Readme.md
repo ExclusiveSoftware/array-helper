@@ -66,9 +66,9 @@ Object
 
 ```javascript
 var arr = [
-	{ ID: 1, Data: 'hello world' },
-	{ ID: 2, Data: 'arrays are useful', Data2: 'dictionaries are good to' },
-	{ ID: 2, Data: 'example'}
+    { ID: 1, Data: 'hello world' },
+    { ID: 2, Data: 'arrays are useful', Data2: 'dictionaries are good to' },
+    { ID: 2, Data: 'example'}
 ];
 console.log(arr.toDict('ID'));
 /*
@@ -113,16 +113,16 @@ No return value
 
 ```javascript
 var arr = [
-	{ ID: 1, Data: 'foo' },
-	{ ID: 2, Data: 'bar' }
+    { ID: 1, Data: 'foo' },
+    { ID: 2, Data: 'bar' }
 ];
 
 arr.forEachCallback(function(item, next) {
-	db.someCallToDb(item, function(err, res) {
-		next();
-	});
+    db.someCallToDb(item, function(err, res) {
+        next();
+    });
 }, function() {
-	console.log('Loop complete notify client side');
+    console.log('Loop complete notify client side');
 });
 ```
 
@@ -159,20 +159,20 @@ No return value
 
 ```javascript
 [
-	function(done) {
-		console.log('function 1');
-		done();
-	},
-	function(done) {
-		done(new Error('Error at function 2'));
-	},
-	function(done) {
-		console.log('function 3');
-		done();
-	}
+    function(done) {
+        console.log('function 1');
+        done();
+    },
+    function(done) {
+        done(new Error('Error at function 2'));
+    },
+    function(done) {
+        console.log('function 3');
+        done();
+    }
 ].execute(function(err) {
-	if(err) console.log(err);
-	console.log('Execution complete');
+    if(err) console.log(err);
+    console.log('Execution complete');
 });
 
 /* outputs
