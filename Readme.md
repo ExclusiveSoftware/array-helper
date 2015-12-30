@@ -4,7 +4,14 @@ A package of functions that extend array functionality in Node
 
 ## Installation
 
-npm install array-helper
+npm install arrayhelper
+
+## Usage
+Just add the following line and the Array.prototype will then include all Functions
+
+```javascript
+require('arrayhelper');
+```
 
 ## Functions
 
