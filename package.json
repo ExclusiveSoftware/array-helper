@@ -1,6 +1,6 @@
 {
   "name": "array-helper",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Common array functions used by Exclusive Software",
   "main": "index.js",
   "directories": {
