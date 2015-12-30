@@ -1,0 +1,32 @@
+{
+  "name": "array-helper",
+  "version": "0.0.0",
+  "description": "Common array functions used by Exclusive Software",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "assert": "^1.3.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExclusiveSoftware/array-helper.git"
+  },
+  "keywords": [
+    "array",
+    "extension",
+    "helper"
+  ],
+  "author": "Mathew Crothers <mathew.crothers@exclusivesoftware.com.au>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExclusiveSoftware/array-helper/issues"
+  },
+  "homepage": "https://github.com/ExclusiveSoftware/array-helper#readme"
+}
