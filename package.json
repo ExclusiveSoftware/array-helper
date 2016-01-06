@@ -1,6 +1,6 @@
 {
   "name": "arrayhelper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Common array functions used by Exclusive Software",
   "main": "index.js",
   "directories": {
@@ -21,7 +21,10 @@
   "keywords": [
     "array",
     "extension",
-    "helper"
+    "helper",
+    "equals",
+    "distinct",
+    "dictionary"
   ],
   "author": "Mathew Crothers <mathew.crothers@exclusivesoftware.com.au>",
   "license": "MIT",
