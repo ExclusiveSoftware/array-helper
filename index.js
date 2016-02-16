@@ -1,5 +1,10 @@
-var fs = require('fs');
-var mods = fs.readdirSync(__dirname + '/lib');
+var mods = [
+    'distinct',
+    'equals',
+    'execute',
+    'forEach',
+    'toDict'
+];
 for (var x in mods) {
-    if (mods[x].slice(-3) === '.js') require('./lib/' + mods[x]);
+    require('./lib/' + mods[x] + '.js');
 }
